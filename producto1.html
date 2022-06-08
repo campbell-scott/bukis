@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Producto1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<nav id="header" class="navbar top-0 position-sticky">
+    <div class="d-flex flex-row col-2 d-flex justify-content-start align-items-center">
+      <button class="navbar-toggler my-lg-2 mx-lg-5 my-md-1 mx-md-4 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">bukis</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preguntas.html">Preguntas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+      <a class="marca" href="index.html">bukis</a>
+    </div>
+	  <ul class="d-flex justify-content-around col-lg-8 col-1 m-0">
+			<li>
+				<a class="navega" href="index.html">Inicio</a>
+			</li>
+			<li>
+				<a class="navega" href="productos.html">Productos</a>
+			</li>
+			<li>
+				<a class="navega" href="preguntas.html">Preguntas</a>
+			</li>
+			<li>
+				<a class="navega" href="contacto.html">Contacto</a>
+			</li>
+	  </ul>
+  </nav>
+	<div class="productosgrid">
+		<div class="imgproducto">
+			<img src="imagenes/mateap.jpg">
+		</div>
+		<div class="titulop">
+			<p>Mate de Algarrobo</p>
+			<p>$1800</p>
+		</div>
+		<div class="descripp">
+			<p>Mate de algarrobo, pintado a mano con acrilicos repasado con laka para un acabado brillante. </p>
+		</div>
+		<div class="pagosp">
+			<p class="fptext">Formas de pago</p>
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="bg-dark">
+					<h2 class="accordion-header" id="flush-headingOne">
+					    <button class="accordion-button fpp bg-dark collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+					    	Tarjetas de credito
+					    </button>
+					</h2>
+					<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					    	<div class="accordion-body">
+					    		<p class="m-0 text-light">Hasta 3 cuotas sin interes.</p>
+					    		<img src="imagenes/tarjetas/amex.png">
+					    		<img src="imagenes/tarjetas/bbva.png">
+					    		<img src="imagenes/tarjetas/bnacion.png">
+					    		<img src="imagenes/tarjetas/bsantander.png">
+					    		<img src="imagenes/tarjetas/galicia.png">
+					    		<img src="imagenes/tarjetas/HSBC.png">
+					    		<img src="imagenes/tarjetas/ICBC.png">
+					    		<img src="imagenes/tarjetas/master.png">
+					    	</div>
+					</div>
+				    </div>
+				    <div class="bg-dark formasp">
+				    	<h2 class="accordion-header" id="flush-headingTwo">
+				     		 <button class="accordion-button fpp bg-dark collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+				        		Tarjetas de debito
+				      		</button>
+				   		</h2>
+				    	<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+				     		<div class="accordion-body">
+				     			<img src="imagenes/tarjetas/masterdebito.png">
+				     			<img src="imagenes/tarjetas/visadebito.png">
+				     		</div>
+				    	</div>
+				    </div>
+				    <div class="bg-dark formasp">
+					    <h2 class="accordion-header" id="flush-headingThree">
+					      <button class="accordion-button fpp bg-dark collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+					        Tranferencia o efectivo
+					      </button>
+					    </h2>
+				    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				    	<div class="accordion-body">
+				    		<p class="m-0 text-light">Efectivo</p>
+				    		<img src="imagenes/tarjetas/rapipago.png">
+				    		<img src="imagenes/tarjetas/pagofacil.png">
+				    		<p class="m-0 text-light">Tranferencia</p>
+				    		<img src="imagenes/tarjetas/merpago.png">
+				    	</div>
+				    </div>
+				</div>
+			</div>
+			<div class="d-grid gap-2 mt-5">
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+				  Comprar
+				</button>
+				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Ups...</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="modal-body">
+				        Al parecer nos quedamos sin stock de este producto.
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mt-4" id="footer">
+		<div class="redes">
+			<p class="re">Seguinos en nuestras redes</p>
+			<div class="redima">
+				<a href="https://www.instagram.com/bukis.papel/?hl=es" target="_blank"><img class="insta" src="imagenes/instagram.jpg"></a>
+				<a href="https://www.facebook.com/Bukis-en-papel-2009113629185386/" target="_blank"><img class="insta" src="imagenes/facebook2.png"></a>
+			</div>
+		</div>
+		<div class="pagosinfo">
+			<img class="pagos" src="imagenes/pagos.jpg">
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

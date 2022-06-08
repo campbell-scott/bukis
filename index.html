@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Bukis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div class="containergrid">
+  	<!-- HEADER -->
+	  <nav id="header" class="navbar top-0 position-sticky">
+      <div class="d-flex flex-row col-2 d-flex justify-content-start align-items-center">
+        <button class="navbar-toggler my-lg-2 mx-lg-5 my-md-1 mx-md-4 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas col-3 offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">bukis</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preguntas.html">Preguntas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="marca" href="index.html">bukis</a>
+      </div>
+	  	<ul class="d-flex justify-content-around col-lg-8 col-1 m-0">
+				<li>
+					<a class="navd" href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a class="navega" href="productos.html">Productos</a>
+				</li>
+				<li>
+					<a class="navega" href="preguntas.html">Preguntas</a>
+				</li>
+				<li>
+					<a class="navega" href="contacto.html">Contacto</a>
+				</li>
+	  	</ul>
+    </nav>
+		<!-- BANNER -->
+		<div class="banner container-fluid">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+	        <div class="carousel-item active">
+	        	<img src="imagenes/banner1.jpg" class="img-fluid d-block w-100" alt="...">
+	        </div>
+	        <div class="carousel-item">
+	          <img src="imagenes/banner2.jpg" class="img-fluid d-block w-100" alt="...">
+	        </div>
+	        <div class="carousel-item">
+	        	<img src="imagenes/banner3.jpg" class="img-fluid d-block w-100" alt="...">
+	      	</div>
+      	</div>
+		  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+			  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  	<span class="visually-hidden">Previous</span>
+				</button>
+		  	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+			 	 	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  	<span class="visually-hidden">Next</span>
+		  	</button>
+		  </div>
+    </div>
+		<!-- INFO -->
+		<div class="relleno">
+			<div class="info">
+				<img src="imagenes/envios.png">
+				<div>
+					<p class="bold">ENVIOS</p>
+					<p>¡A todo el país! A domicilio o a la sucursal de CA más cercana</p>
+				</div>
+			</div>
+			<div class="info">
+				<img src="imagenes/tarjeta.png">
+				<div>
+					<p class="bold">CON TODAS LAS TARJETAS</p>
+					<p>que encuentres en mercado pago</p>
+				</div>
+			</div>
+			<div class="info">
+				<img src="imagenes/seguro.png">
+				<div>
+					<p class="bold">SITIO SEGURO</p>
+					<p>Protegemos tus datos</p>
+				</div>
+			</div>
+			<div class="cuadrado"></div>
+		</div>
+				<!-- PRODUCTOS DESTACADOS -->
+		<div class="productosdesta">
+			<p class="pdtext">PRODUCTOS DESTACADOS</p>
+			<div class="col-10 mt-5 offset-1 text-center">
+				<div class="row d-flex flex-wrap justify-content-lg-between justify-content-center">
+	          		<div class="producto m-lg-4 mx-md-5 m-3 col-lg-3 col-md-4 col-sm-9">
+	            		<a href="producto1.html"><img class="img-fluid" src="imagenes/matea.jpg" alt="matea"></a>
+	           			<p class="mt-2 mb-0 text-light">Mate de algarrobo</p>
+	          		</div>
+	          		<div class="producto m-lg-4 mx-md-5 m-3 col-lg-3 col-md-4 col-sm-9">
+	            		<img class="img-fluid" src="imagenes/mateb.png">
+	            		<p class="mt-2 mb-0 text-light">Mate personalizado</p>
+	          		</div>
+	          		<div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-9">
+	            		<img class="img-fluid" src="imagenes/libretab.jpg">
+	            		<p class="mt-2 mb-0 text-light">Libreta personalizada</p>
+	          		</div>
+	        	</div>
+        	</div>
+		</div>
+		<!-- FOOTER -->
+		<div id="footer">
+			<div class="redes">
+				<p class="re">Seguinos en nuestras redes</p>
+				<div class="redima">
+					<a href="https://www.instagram.com/bukis.papel/?hl=es" target="_blank"><img class="insta" src="imagenes/instagram.jpg"></a>
+					<a href="https://www.facebook.com/Bukis-en-papel-2009113629185386/" target="_blank"><img class="insta" src="imagenes/facebook2.png"></a>
+				</div>
+			</div>
+			<div class="pagosinfo">
+				<img class="pagos" src="imagenes/pagos.jpg">
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

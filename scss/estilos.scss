@@ -1,0 +1,751 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+body{
+	background-image: url(../imagenes/fondo3.jpg);
+	font-family: 'Josefin Sans', sans-serif;
+}
+                                                         /*css compartido*/
+@mixin navegacion($fz){
+	color: white;
+	text-decoration: none;
+	font-size: $fz;
+	font-weight: 400;
+	list-style: none;
+	@media all and (max-width: 992px){
+	width: 0%;
+	font-size: .01rem;
+	opacity: 0;
+	}
+	&:hover{
+		text-decoration: underline;
+		color: #bf957f;
+		opacity: 0.9;
+	}
+}
+#header{
+	z-index: 10;
+	background-color: #212529;
+    .marca{
+		font-size: 2rem;
+		text-decoration: none;
+		font-weight: 500;
+		color: #bf957f;
+		@media all and (max-width: 992px){
+			font-size: 1.9rem;
+		}
+		@media all and (max-width: 768px){
+			font-size: 1.8rem;
+		}
+		@media all and (max-width: 576px){
+			font-size: 1.7rem;
+		}
+	}
+	.navbar-toggler-icon{
+		width: 1.8em;
+		height: 1.8em;
+		background-image: url(../imagenes/menu.png);
+		@media all and (max-width: 992px){
+			width: 1.6em;
+			height: 1.6em;
+		}
+		@media all and (max-width: 768px){
+			width: 1.4em;
+			height: 1.4em;
+		}
+		@media all and (max-width: 576px){
+			width: 1.2em;
+			height: 1.2em;
+		}
+	}
+	.navd{
+		@include navegacion(1.5rem);
+		font-weight: 800
+	}
+	.navega{
+		@include navegacion(1.3rem);
+    }
+	.offcanvas{
+		background-color: #1d1d1d;
+		--bs-offcanvas-width: 300px;
+		@media all and (max-width: 800px){
+			--bs-offcanvas-width: 250px;
+		}
+		@media all and (max-width: 576px){
+			--bs-offcanvas-width: 200px;
+		}
+	}
+	.offcanvas-title{
+		font-size: 2rem;
+		color: #bf957f;
+		font-weight: 600;
+		@media all and (max-width: 800px){
+			font-size: 1.8rem;
+		}
+		@media all and (max-width: 576px){
+			font-size: 1.6rem;
+		}
+	}
+	.nav-link{
+		font-size: 1.8rem;
+		color: white;
+		&:hover{
+			color: #bf957f;
+		}
+		@media all and (max-width: 800px){
+			font-size: 1.6rem;
+		}
+		@media all and (max-width: 576px){
+			font-size: 1.4rem;
+		}
+	}
+
+}
+.producto{
+	border: solid 20px black;
+	background-color: black;
+	border-radius: 10px;
+	transition: all 250ms;
+    &:hover{
+        transform: scale(1.15);
+		box-shadow: 0 1px 10px 1px black;
+    }
+}
+#footer{
+	width: 100%;
+	height: 120px;
+	background-color: #212529;
+	position: sticky;
+	z-index: 100;
+	padding: 0 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    @media all and (max-width: 992px){
+        height: 110px;
+    }
+    @media all and (max-width: 768px){
+        height: 100px;
+    }
+    @media all and (max-width: 576px){
+        height: 90px;
+    }
+    @media all and (max-width: 394px){
+        height: 80px;
+    }
+	.redes{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+    .insta{
+        height: 35px;
+        margin-top: 25px;
+        @media all and (max-width: 992px){
+            height: 30px;
+            margin-top: 20px;
+        }
+        @media all and (max-width: 768px){
+            height: 25px;
+            margin-top: 15px;
+        }
+        @media all and (max-width: 576px){
+            height: 30px;
+            margin-top: 10px;
+        }
+        @media all and (max-width: 394px){
+			height: 25px;
+        }
+    }
+    .re{
+        color: white;
+		margin: 0;
+        font-size: 1rem;
+        text-align: center;
+        @media all and (max-width: 992px){
+            font-size: 0.9rem;
+        }
+        @media all and (max-width: 768px){
+            font-size: 0.8rem;
+        }
+        @media all and (max-width: 576px){
+            font-size: 0.7rem;
+        }
+    }
+    .pagos{
+        height: 70px;
+        @media all and (max-width: 992px){
+            height: 60px;
+        }
+        @media all and (max-width: 768px){
+            height: 50px;
+        }
+        @media all and (max-width: 576px){
+            height: 40px;
+        }
+    }
+}
+                                                   /*INDEX*/
+.containergrid{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 40px;
+    #header{
+        grid-column: 1/4;
+    }
+    .banner{
+        grid-column: 1/4;
+        padding: 0;
+        width: 90%;
+        margin: 0 5%;
+    }
+    .relleno{
+        grid-column: 1/4;
+        display: flex;
+	    flex-wrap: wrap;
+	    width: 100%;
+	    justify-self:center;
+	    padding: 0 10% 0 10%;
+        .info{
+            width: 33.33333%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            @media all and (max-width: 1300px){
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+				p{
+					margin: 10px 0 0 0;
+				}
+            }
+			@media all and (max-width: 768px){
+				font-size: 0.8rem;
+			}
+			.bold{
+				font-weight: 700;
+			}
+			& div{
+				align-self: center;
+			}
+            @media (min-width: 1300px){
+				p{
+                	margin: 0 0 0 20px;   
+				}
+			}
+            img{
+                height: 60px;
+                @media all and (max-width: 992px){
+                    height: 40px;
+                }
+            }
+            .cuadrado{
+                height: 10px;
+                border-bottom: black solid;
+                width: 100%
+            }
+        }
+    }
+    .productosdesta{
+        grid-column: 1/4;
+        .pdtext{
+            margin-top: 70px;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: center;
+            @media all and (max-width: 992px){
+                margin-top: 50px;
+                font-size: 2rem;
+            }
+            @media all and (max-width: 768px){
+                margin-top: 40px;
+                font-size: 1.8rem;
+            }
+            @media all and (max-width: 576px){
+                margin-top: 30px;
+                font-size: 1.5rem;
+            }
+            @media all and (max-width: 394px){
+                margin-top: 25px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    #footer{
+        grid-column: 1/4;
+        
+    }
+    
+}
+                                            /*PRODUCTOS*/
+.cproductos{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 50px;
+	#header{
+		grid-column: 1/4;
+	}
+	.allproducts{
+		grid-column: 1/4;
+		margin-left: 5%;
+		.allp{
+			font-size: 2rem;
+			font-weight: bolder;
+			@media all and (max-width: 992px){
+				font-size: 1.8rem;
+			}
+			@media all and (max-width: 769px){
+				font-size: 1.6rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 1.4rem;
+			}
+		}
+		.allpo{
+			font-size: 1rem;
+			@media all and (max-width: 992px){
+				font-size: 0.9rem;
+			}
+			@media all and (max-width: 769px){
+				font-size: 0.8rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 0.6rem;
+			}
+		}
+	}
+	.pd{
+		grid-column: 1/4;
+	}
+	#footer{
+		grid-column: 1/4;
+	}
+	
+}
+
+
+
+                                                  /*PREGUNTAS*/
+.preguntasf{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 50px;
+	#header{
+		grid-column: 1/4;
+	}
+	.ptext{
+		margin-left: 5%;
+		grid-column: 1/4;
+		font-size: 2rem;
+		font-weight: bolder;
+		@media all and (max-width: 992px){
+			font-size: 1.8rem;
+		}
+		@media all and (max-width: 769px){
+			font-size: 1.6rem;
+		}
+		@media all and (max-width: 576px){
+			font-size: 1.4rem;
+		}
+		@media all and (max-width: 394px){
+			font-size: 1.2rem;
+		}
+	}
+	.preguntas{
+		grid-column: 1/4;
+		margin: 0 7%;
+		border-radius: 45px;
+		--bs-accordion-bg: #4b4b4b;
+		.accordion-body{
+			background-color:  #838383;
+		}
+		.prtext{
+			color: white;
+			font-size: 1.3rem;
+			font-weight: 500;
+			@media all and (max-width: 992px){
+				font-size: 1.1rem;
+			}
+			@media all and (max-width: 769px){
+				font-size: 1rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 0.9rem;
+			}
+			@media all and (max-width: 394px){
+				font-size: 0.8rem;
+			}
+		}
+		.retext{
+			color: white;
+			font-size: 1.1rem;
+			font-weight: 600;
+			padding-left: 15px;
+			@media all and (max-width: 992px){
+				font-size: 1rem;
+			}
+			@media all and (max-width: 769px){
+				font-size: 0.9rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 0.8rem;
+			}
+			@media all and (max-width: 394px){
+				font-size: 0.7rem;
+			}
+		}
+		.accordion-button:not(.collapsed){
+			background-color: #646464;
+			color: aliceblue;
+		}
+		.accordion-button::after{
+			background-image: url(../imagenes/flechaabajo.png);
+		}
+		.accordion-button:focus{
+			border-color: #8b8b8c;
+		}
+	}
+	#footer{
+		grid-column: 1/4;
+	}
+}
+                                                         /*CONTACTOS*/
+.ccontacto{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 40px;
+	#header{
+		grid-column: 1/3;
+		grid-row: 1/2;
+	}
+	.ctext{
+		grid-column: 1/3;
+		grid-row: 2/3;
+		font-size: 2rem;
+		font-weight: bolder;
+		margin-left: 5%;
+		@media all and (max-width: 992px){
+			font-size: 1.8rem;
+		}
+		@media all and (max-width: 769px){
+			font-size: 1.6rem;
+		}
+		@media all and (max-width: 576px){
+			font-size: 1.4rem;
+		}
+		@media all and (max-width: 394px){
+			font-size: 1.4rem;
+		}
+	}
+	.contacto{
+		grid-column: 1/2;
+		grid-row: 3/5;
+		@media all and (max-width: 850px){
+			grid-column: 1/3;
+			grid-row: 3/4;
+		}
+		.fcontacto{
+			margin: 0 5%;
+			width: 90%;
+			height: 450px;
+			background-color: black;
+			border-radius: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			opacity: 0.9;
+			@media all and (max-width: 769px){
+				height: 400px;
+			}
+			@media all and (max-width: 576px){
+				height: 350px;
+			}
+			@media all and (max-width: 394px){
+				height: 300px;
+			}
+		}
+		.form{
+			width: 95%;
+			height: 15%;
+			background-color: black;
+			color: white;
+			font-size: 1.3rem;
+			border: none;
+			@media all and (max-width: 992px){
+				font-size: 1.1rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 1rem;
+			}
+			@media all and (max-width: 394px){
+				font-size: 0.9rem;
+            }
+			&:focus{
+				outline: 0 none;
+			}
+		}
+		textarea{
+			width: 95%;
+			height: 25%;
+			background-color: black;
+			color: white;
+			font-size: 1.3rem;
+			border: none;
+			&:focus{
+				outline: 0 none;
+			}
+			@media all and (max-width: 992px){
+				font-size: 1.1rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 1rem;
+			}
+			@media all and (max-width: 394px){
+				font-size: 0.9rem;
+			}
+		}
+		.borde{
+			border-bottom: solid 3px white;
+		}
+		.botone{
+			width: 35%;
+			height: 8%;
+			font-size: 1.4rem;
+			background-color: lightgrey;
+			border-radius: 20px;
+			@media all and (max-width: 992px){
+				font-size: 1.2rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 1.1rem;
+			}
+			@media all and (max-width: 394px){
+				font-size: 1rem;
+			}
+		}
+	}
+	.mail{
+		grid-column: 2/3;
+		grid-row: 3/4;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		@media all and (max-width: 850px){
+			grid-column: 1/3;
+			grid-row: 4/5;
+			justify-self: center;
+		}
+		img{
+			height: 35px;
+			margin: 0 1%;
+			@media all and (max-width: 992px){
+				height: 30px;
+			}
+			@media all and (max-width: 576px){
+				height: 25px;
+			}
+			@media all and (max-width: 394px){
+				height: 20px;
+			}
+		}
+		p{
+			margin: 0;
+			font-size: 1.2rem;
+			@media all and (max-width: 992px){
+				font-size: 1rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 0.9rem;
+			}
+			@media all and (max-width: 394px){
+				font-size: 0.8rem;
+			}
+		}
+	}
+	.otraredes{
+		grid-column: 2/3;
+		grid-row: 4/5;
+		margin-top: 3%;
+		display: flex;
+		flex-direction: column;
+		@media all and (max-width: 850px){
+			grid-column: 1/3;
+			grid-row: 5/6;
+			margin: 0 4%;
+		}
+		@media all and (max-width: 992px){
+				font-size: 1.6rem;
+		}
+		p{
+			margin: 0 0 0 3%;
+			font-size: 1.8rem;
+			@media all and (max-width: 576px){
+				font-size: 1.2rem;
+			}
+			@media all and (max-width: 394px){
+				font-size: 1.1rem;
+			}
+		}
+		img{
+			width: 50px;
+			margin-right: 1%;
+			@media all and (max-width: 992px){
+				width: 45px;
+			}
+			@media all and (max-width: 576px){
+				width: 35px;
+			}
+			@media all and (max-width: 394px){
+				width: 30px;
+			}
+		}
+		div{
+			display: flex;
+			align-items: center;
+			margin: 2% 0 0 3%;
+		}
+		div p{
+			font-size: 1.3rem;
+			@media all and (max-width: 992px){
+				font-size: 1.1rem;
+			}
+			@media all and (max-width: 576px){
+				font-size: 1rem;
+			}
+			@media all and (max-width: 394px){
+				font-size: 0.9rem;
+			}
+		}
+	}
+	#footer{
+		grid-column: 1/3;
+	}
+}
+/*PRODUCTO1*/
+.productosgrid{
+	width: 90%;
+	margin: 0 5%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 40px;
+	.imgproducto{
+		grid-column: 1/3;
+		grid-row: 2/4;
+		img{
+			object-fit: cover;
+			width: 100%;
+			border: solid black 10px;
+			border-radius: 10px;
+			@media all and (max-width: 769px){
+				width: 94%;
+				margin: 0 3%;
+			}
+		}
+		@media all and (max-width: 1200px){
+			grid-column: 1/4;
+			grid-row: 2/5;
+		}
+		@media all and (max-width: 928px){
+			grid-column: 1/6;
+			grid-row: 2/3;
+		}
+	}
+	.titulop{
+		grid-column: 3/6;
+		grid-row: 2/3;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-weight: 700;
+		font-size: 2rem;
+		@media all and (max-width: 1200px){
+			grid-column: 4/6;
+			grid-row: 2/3;
+			font-size: 1.3rem;
+		}
+		@media all and (max-width: 928px){
+			grid-column: 1/6;
+			grid-row: 3/4;
+		}
+	}
+	.descripp{
+		grid-column: 3/5;
+		grid-row: 3/4;
+		font-weight: 500;
+		font-size: 1.5rem;
+		margin: 0 5%;
+		@media all and (max-width: 1200px){
+			grid-column: 4/6;
+			grid-row: 3/4;
+			font-size: 1.1rem;
+		}
+		@media all and (max-width: 928px){
+			grid-column: 1/6;
+			grid-row: 4/5;
+		}
+	}
+	.pagosp{
+		grid-column: 5/6;
+		grid-row: 3/4;
+		@media all and (max-width: 1200px){
+			grid-column: 4/6;
+			grid-row: 4/5;
+		}
+		@media all and (max-width: 928px){
+			grid-column: 1/6;
+			grid-row: 5/6;
+		}
+		.accordion{
+			border: solid black 5px;
+			border-radius: 5px;
+		}
+		.formasp{
+			border-top: solid black 5px;
+		}
+		.accordion img{
+			width: 30px;
+			margin: 5px;
+		}
+		.fpp{
+			padding: 0.5rem;
+		}
+		.fptext{
+			font-size: 1.3rem;
+			font-weight: 600;
+			@media all and (max-width: 992px){
+				font-size: 1.2rem;
+			}
+		}
+		.btn{
+			color: white;
+			background-color: #000;
+			&:hover{
+				background-color: #272727;
+			}
+		}
+		.accordion-button::after{
+			background-image: url(../imagenes/flechaabajo.png);
+		}
+		.accordion-button:not(.collapsed)::after{
+			background-image: url(../imagenes/flechaabajo.png);
+		}
+	}
+}

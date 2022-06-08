@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Contacto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div class="ccontacto">
+		<nav id="header" class="navbar top-0 position-sticky">
+      <div class="d-flex flex-row col-2 d-flex justify-content-start align-items-center">
+        <button class="navbar-toggler my-lg-2 mx-lg-5 my-md-1 mx-md-4 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">bukis</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preguntas.html">Preguntas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="marca" href="index.html">bukis</a>
+      </div>
+	  	<ul class="d-flex justify-content-around col-lg-8 col-1 m-0">
+				<li>
+					<a class="navega" href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a class="navega" href="productos.html">Productos</a>
+				</li>
+				<li>
+					<a class="navega" href="preguntas.html">Preguntas</a>
+				</li>
+				<li>
+					<a class="navd" href="contacto.html">Contacto</a>
+				</li>
+	  	</ul>
+    </nav>
+		<div class="ctext">
+			<p>CONTACTO</p>
+		</div>
+		<div class="contacto">
+			<form class="fcontacto" action="contacto.html" method="POST" enctype="multipart/form-data">
+					<input class="form borde" type="text" name="Nombre" placeholder="Nombre">
+					<input class="form borde" type="email" name="E-Mail" placeholder="E-Mail">
+					<input class="form borde" type="tel" name="Telefono" placeholder="Telefono">		
+					<textarea class="borde" name="mensaje" placeholder="Mensaje" ></textarea>
+					<input class="botone" type="submit" name="enviar" value="ENVIAR">			
+			</form>
+		</div>
+		<div class="mail">
+			<img src="imagenes/mail.png">
+			<p>bukis.agenda@gmail.com</p>
+		</div>
+		<div class="otraredes">
+			<p>Tambien podes encontrarnos en:</p>
+			<div>
+				<a href="https://www.instagram.com/bukis.papel/?hl=es" target="_blank"><img src="imagenes/instagram2.png"></a>
+				<p>Instagram</p>
+			</div>
+			<div>
+				<a href="https://www.facebook.com/Bukis-en-papel-2009113629185386/" target="_blank"><img src="imagenes/facebook.png"></a>
+				<p>Facebook</p>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="redes">
+				<p class="re">Seguinos en nuestras redes</p>
+				<div class="redima">
+					<a href="https://www.instagram.com/bukis.papel/?hl=es" target="_blank"><img class="insta" src="imagenes/instagram.jpg"></a>
+					<a href="https://www.facebook.com/Bukis-en-papel-2009113629185386/" target="_blank"><img class="insta" src="imagenes/facebook2.png"></a>
+				</div>
+			</div>
+			<div class="pagosinfo">
+				<img class="pagos" src="imagenes/pagos.jpg">
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
