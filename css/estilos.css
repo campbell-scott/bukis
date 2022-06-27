@@ -221,7 +221,7 @@ body {
 
 @media all and (max-width: 992px) {
   .producto .dispo {
-    opacity: .2;
+    opacity: .4;
   }
 }
 
