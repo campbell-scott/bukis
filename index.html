@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
   	<title>Bukis</title>
+  	<meta name="description" content="Conoce todos nuestros productos artesanales, mates, agendas, libretas, bolsos">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -59,13 +60,13 @@
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 	        <div class="carousel-item active">
-	        	<img src="imagenes/banner1.jpg" class="img-fluid d-block w-100" alt="...">
+	        	<img src="imagenes/banner1.jpg" class="img-fluid d-block w-100" alt="banner">
 	        </div>
 	        <div class="carousel-item">
-	          <img src="imagenes/banner2.jpg" class="img-fluid d-block w-100" alt="...">
+	          <img src="imagenes/banner2.jpg" class="img-fluid d-block w-100" alt="banner">
 	        </div>
 	        <div class="carousel-item">
-	        	<img src="imagenes/banner3.jpg" class="img-fluid d-block w-100" alt="...">
+	        	<img src="imagenes/banner3.jpg" class="img-fluid d-block w-100" alt="banner">
 	      	</div>
       	</div>
 		  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -78,20 +79,35 @@
 		  	</button>
 		  </div>
     </div>
+    <div id="carouselExampleInterval" class="bannermovil carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-bs-interval="10000">
+		      <img src="imagenes/bannerM1.jpg" class="d-block w-100" alt="banner">
+		    </div>
+		    <div class="carousel-item" data-bs-interval="2000">
+		      <img src="imagenes/bannerM2.jpg" class="d-block w-100" alt="banner">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="imagenes/bannerM3.jpg" class="d-block w-100" alt="banner">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
 		<!-- INFO -->
 		<div class="relleno">
+			<div class="linea"></div>
 			<div class="info">
 				<img src="imagenes/envios.png">
 				<div>
 					<p class="bold">ENVIOS</p>
-					<p>¡A todo el país! A domicilio o a la sucursal de CA más cercana</p>
-				</div>
-			</div>
-			<div class="info">
-				<img src="imagenes/tarjeta.png">
-				<div>
-					<p class="bold">CON TODAS LAS TARJETAS</p>
-					<p>que encuentres en mercado pago</p>
+					<p>¡A todo el país! A tu domicilio</p>
 				</div>
 			</div>
 			<div class="info">
@@ -101,27 +117,35 @@
 					<p>Protegemos tus datos</p>
 				</div>
 			</div>
-			<div class="cuadrado"></div>
+			<div class="info">
+				<img src="imagenes/tarjeta.png">
+				<div>
+					<p class="bold">CON TODAS LAS TARJETAS</p>
+					<p>que encuentres en mercado pago</p>
+				</div>
+			</div>
+			<div class="linea"></div>
 		</div>
 				<!-- PRODUCTOS DESTACADOS -->
 		<div class="productosdesta">
 			<p class="pdtext">PRODUCTOS DESTACADOS</p>
 			<div class="col-10 mt-5 offset-1 text-center">
 				<div class="row d-flex flex-wrap justify-content-lg-between justify-content-center">
-	          		<div class="producto m-lg-4 mx-md-5 m-3 col-lg-3 col-md-4 col-sm-9">
-	            		<a href="producto1.html"><img class="img-fluid" src="imagenes/matea.jpg" alt="matea"></a>
-	           			<p class="mt-2 mb-0 text-light">Mate de algarrobo</p>
-	          		</div>
-	          		<div class="producto m-lg-4 mx-md-5 m-3 col-lg-3 col-md-4 col-sm-9">
-	            		<img class="img-fluid" src="imagenes/mateb.png">
-	            		<p class="mt-2 mb-0 text-light">Mate personalizado</p>
-	          		</div>
-	          		<div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-9">
-	            		<img class="img-fluid" src="imagenes/libretab.jpg">
-	            		<p class="mt-2 mb-0 text-light">Libreta personalizada</p>
-	          		</div>
-	        	</div>
-        	</div>
+      		<div class="producto m-lg-4 mx-md-5 m-3 col-lg-3 col-md-4 col-sm-9">
+        		<a href="producto1.html"><img class="img-fluid" src="imagenes/matea.jpg" alt="matea"></a>
+       			<p class="mt-2 mb-0 text-light">Mate de algarrobo</p>
+      		</div>
+      		<div class="producto m-lg-4 mx-md-5 m-3 col-lg-3 col-md-4 col-sm-9">
+        		<a href="producto2.html"><img class="img-fluid" src="imagenes/matec.jpg"></a>
+        		<p class="mt-2 mb-0 text-light">Mate de calabaza</p>
+      		</div>
+      		<div class="producto m-lg-4 m-md-4 m-3 col-lg-3 col-md-4 col-sm-9">
+        		<img class=" dispo img-fluid" src="imagenes/libretab.jpg">
+        		<p class="nodispo">No disponible</p>
+        		<p class="mt-2 mb-0 text-light">Libreta personalizada</p>
+      		</div>
+      	</div>
+    	</div>
 		</div>
 		<!-- FOOTER -->
 		<div id="footer">
@@ -131,6 +155,13 @@
 					<a href="https://www.instagram.com/bukis.papel/?hl=es" target="_blank"><img class="insta" src="imagenes/instagram.jpg"></a>
 					<a href="https://www.facebook.com/Bukis-en-papel-2009113629185386/" target="_blank"><img class="insta" src="imagenes/facebook2.png"></a>
 				</div>
+			</div>
+			<div class="newspaper">
+				<p>Suscribite a nuestra newsletter!</p>
+				<form class="news" action="index.html" method="POST" enctype="multipart/form-data">
+					<input class="form borde" type="email" name="E-Mail" placeholder="E-Mail">	
+					<input class="newboton" type="submit" name="enviar" value="Enviar">
+				</form>
 			</div>
 			<div class="pagosinfo">
 				<img class="pagos" src="imagenes/pagos.jpg">
